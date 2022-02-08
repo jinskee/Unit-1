@@ -51,7 +51,7 @@ function cities(){
 	
 	//use query selector to access mydiv and 
 	document.querySelector("#mydiv").appendChild(table);
-
+	//Call the addColumns(cityPop) function
 	addColumns(cityPop);
 };
 
