@@ -57,17 +57,17 @@ function cities(){
     var theid = document.querySelector("#mydiv").id;
 
     //set the id to newdiv
-    document.querySelector("#mydiv").id = "newdiv";
+    //document.querySelector("#mydiv").id = "newdiv";
     
     //set the class 
-    document.querySelector("#newdiv").className = "foo";
+    //document.querySelector("#newdiv").className = "foo";
 
     //iterate over each script element and add each one's source url as text to the div
     //document.querySelectorAll("script").forEach(function(selectedScript){
         //var thesource = selectedScript.src;
         //document.querySelector("#newdiv").insertAdjacentHTML('beforeend',thesource);
     //})
-
+    document.querySelector("#mydiv").appendChild(table);
         //Added below Example 3.8...
     //click listener with anonymous handler function
     document.querySelector("table").addEventListener("click", function(){
@@ -87,7 +87,7 @@ function cities(){
     //remove the event listener
     //document.querySelector("table").removeEventListener('click', clickme)
 
-    document.querySelector("#newdiv").appendChild(table);
+    
 }
 
 document.addEventListener('DOMContentLoaded',initialize)
