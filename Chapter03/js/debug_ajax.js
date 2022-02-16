@@ -151,15 +151,17 @@ function debugAjax(){
 };
 //define a callback function 
 function callback(response){
-	
-	//Variable myData 	
+	//insert data as a string onto the dom
+	document.querySelector("#mydiv").insertAdjacentHTML('beforeend', '<br>GeoJSON data:<br>' + JSON.stringify(response))
+	console.log('This is the data', response)
+	/*//Variable myData 	
 	var myData = response;
 	//pass the data to another function 
-	nextFunction(myData);
+	nextFunction(myData);*/
 	
 };
 
-function nextFunction(data){
+/*function nextFunction(data){
 	//log the data as a string
 	console.log(JSON.stringify(data));//contains response data held by myData in callback
 	//check the data
@@ -167,7 +169,7 @@ function nextFunction(data){
 	
 	//insert the data as a string onto the DOM
 	document.querySelector("#mydiv").insertAdjacentHTML('beforeend', '<br>GeoJSON data:<br>' + JSON.stringify(data))
-};
+};*/
 
 
 //call the debugAjax function when window has loaded
