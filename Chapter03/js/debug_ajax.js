@@ -69,7 +69,7 @@ function addColumns(cityPop){
 
 		
 			var citySize ;
-			console.log('Testing')
+			//console.log('Testing')
     		if (cityPop[i-1].population < 100000){
     			citySize = 'Small';
 				row.insertAdjacentHTML('beforeend', citySize);
